@@ -1,0 +1,9 @@
+.meteorAlert {
+  background-color: red;
+}
+.meteorAlertVisible {
+  display: block;
+}
+.meteorAlertHidden {
+  display: none;
+}

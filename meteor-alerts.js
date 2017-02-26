@@ -1,5 +1,11 @@
-// Write your package code here!
+class MeteorAlerter {
+  constructor() {
 
-// Variables exported by this module can be imported by other packages and
-// applications. See meteor-alerts-tests.js for an example of importing.
-export const name = 'meteor-alerts';
+  }
+  alert(text, time, classes) {
+    Session.set("meteorAlert", {message: text});
+    $(".meteorAlert").show();
+  }
+}
+
+MeteorAlerts = new MeteorAlerter();
