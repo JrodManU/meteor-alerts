@@ -27,8 +27,7 @@ Package.onUse(function(api) {
     "meteor-alerts.js",
     "body.html",
     "meteorAlert/meteorAlert.html",
-    "meteorAlert/meteorAlert.js",
-    "meteorAlert/meteorAlert.css"
+    "meteorAlert/meteorAlert.js"
   ], "client");
   api.export("MeteorAlerts");
 });
