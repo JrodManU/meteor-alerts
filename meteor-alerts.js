@@ -14,23 +14,20 @@ class MeteorAlerter {
 
   handleAlert(text, time, classes) {
     Session.set("meteorAlert", {message: text});
-    $(".meteorAlert").removeClass("meteorAlertHidden");
-    $(".meteorAlert").addClass("meteorAlertVisible");
+    $(".meteorAlert").removeClass();
+    $(".meteorAlert").addClass("meteorAlert meteorAlertVisible");
     for(var i = 0; i < classes.length; i++) {
       $(".meteorAlert").addClass(classes[i]);
     }
     var that = this;
     setTimeout(function() {
-      that.hideAlert(classes);
+      that.hideAlert();
     }, time);
   }
 
-  hideAlert(classes) {
+  hideAlert() {
     $(".meteorAlert").removeClass("meteorAlertVisible");
     $(".meteorAlert").addClass("meteorAlertHidden");
-    for(var i = 0; i < classes.length; i++) {
-      $(".meteorAlert").removeClass(classes[i]);
-    }
     var that = this;
     setTimeout(function() {
       that.checkQueue();

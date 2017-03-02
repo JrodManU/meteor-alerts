@@ -1,6 +1,6 @@
 Package.describe({
   name: "jrodmanu:meteor-alerts",
-  version: "0.0.1",
+  version: "0.0.2",
   // Brief, one-line summary of the package.
   summary: "Display simple alerts at the top of the page",
   // URL to the Git repository containing the source code for this package.
@@ -11,18 +11,11 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom("1.4.2.6");
+  api.versionsFrom("1.4");
   api.use("ecmascript");
   api.use("templating");
   api.use("session");
   api.use("jquery");
-  /*api.addFiles([
-    "meteor-alerts.js",
-    "body.html",
-    "meteorAlert/meteorAlert.js",
-    "meteorAlert/meteorAlert.html",
-    "meteorAlert/meteorAlert.css"
-  ], "client");*/
   api.addFiles([
     "meteor-alerts.js",
     "body.html",
