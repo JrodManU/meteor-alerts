@@ -1,6 +1,6 @@
 Package.describe({
   name: "jrodmanu:meteor-alerts",
-  version: "0.0.3",
+  version: "0.1.0",
   // Brief, one-line summary of the package.
   summary: "Display simple alerts at the top of the page",
   // URL to the Git repository containing the source code for this package.
