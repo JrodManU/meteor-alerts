@@ -14,8 +14,8 @@ class MeteorAlerter {
 
   handleAlert(text, time, classes) {
     Session.set("meteorAlert", {message: text});
-    $(".meteorAlert").removeClass();
-    $(".meteorAlert").addClass("meteorAlert meteorAlertVisible");
+    $("#meteorAlert").removeClass();
+    $("#meteorAlert").addClass("meteorAlert meteorAlertVisible");
     for(var i = 0; i < classes.length; i++) {
       $(".meteorAlert").addClass(classes[i]);
     }
@@ -26,8 +26,8 @@ class MeteorAlerter {
   }
 
   hideAlert() {
-    $(".meteorAlert").removeClass("meteorAlertVisible");
-    $(".meteorAlert").addClass("meteorAlertHidden");
+    $("#meteorAlert").removeClass("meteorAlertVisible");
+    $("#meteorAlert").addClass("meteorAlertHidden");
     var that = this;
     setTimeout(function() {
       that.checkQueue();
